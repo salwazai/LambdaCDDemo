@@ -23,7 +23,7 @@
 				"lambda:*"
 			],
 			"Resource": [
-				"arn:aws:lambda:eu-west-3:830110678464:function:*"
+				"arn:aws:lambda:eu-west-3:830110678464:function/*"
 			],
 			"Effect": "Allow"
 		},
@@ -84,7 +84,7 @@
 				"codedeploy:RegisterApplicationRevision"
 			],
 			"Resource": [
-				"arn:aws:codedeploy:eu-west-3:8301106784643:application:*"
+				"arn:aws:codedeploy:eu-west-3:8301106784643:application/*"
 			],
 			"Effect": "Allow"
 		},
@@ -95,7 +95,7 @@
 				"codedeploy:GetDeployment"
 			],
 			"Resource": [
-				"arn:aws:codedeploy:eu-west-3:8301106784643:deploymentgroup:*"
+				"arn:aws:codedeploy:eu-west-3:8301106784643:deploymentgroup/*"
 			],
 			"Effect": "Allow"
 		},
@@ -104,7 +104,7 @@
 				"codedeploy:GetDeploymentConfig"
 			],
 			"Resource": [
-				"arn:aws:codedeploy:eu-west-3:8301106784643:deploymentconfig:*"
+				"arn:aws:codedeploy:eu-west-3:8301106784643:deploymentconfig/*"
 			],
 			"Effect": "Allow"
 		}
