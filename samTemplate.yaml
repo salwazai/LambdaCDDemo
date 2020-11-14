@@ -1,17 +1,17 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
-Description: CD Demo Lambda
+Description: CD  Lambda
 Resources:
-  CDDemoLambda:
+  CDLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
       CodeUri: ./LambdaCode
-      Description: 'Lambda function for CD Demo'
+      Description: 'Lambda function for Continuous deployment'
       MemorySize: 128
       Timeout: 30
-      Role: 'arn:aws:iam::093833860903:role/MyLambdaRole'
+      Role: 'arn:aws:iam::830110678464:role/MyLambdaRole'
       Events:
         getAZsAPI:
           Type: Api
@@ -20,4 +20,4 @@ Resources:
             Method: get
       Environment:
         Variables:
-          REGION: ap-southeast-2
+          REGION: eu-west-3
