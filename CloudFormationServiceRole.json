@@ -73,7 +73,7 @@
 				"cloudformation:CreateChangeSet"
 			],
 			"Resource": [
-				"arn:aws:cloudformation:eu-west-3:aws:transform/Serverless-2016-10-31"
+				"arn:aws:cloudformation:eu-west-3:830110678464:transform/Serverless-2016-10-31"
 			],
 			"Effect": "Allow"
 		},
